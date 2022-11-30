@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet">
+<title>new</title>
+</head>
+<body>
+<h4>Product</h4>
+<ul><%for (let p of result){%>
+    <li><a href="products/<%=p._id%> "><%= p.name %></a> </li>
+    <%}%>
+    </ul>
+
+
+</body>
