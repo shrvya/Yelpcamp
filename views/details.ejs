@@ -13,5 +13,7 @@
     <li><%= result.category %> </li>
     </ul>
 <a href="/products">back</a>
-
+<form action="/products/<%= result._id %>?_method=delete " method="post">
+    <button>delete</button>
+    </form>
 </body>
