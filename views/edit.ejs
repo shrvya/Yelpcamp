@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet">
+
+</head>
+<body>
+<h4>Edit Product</h4>
+<form action="/products/<%= result._id %>?_method=put " method="post">
+<input type="text" name="name" id="name" placeholder="productname" value="<%= result.name %> ">
+<input type="text" name="price" id="price" placeholder="productprice" value="<%= result.price %> ">
+<select name="category" id="category">
+    <option value="fruits" <%= result.category==='fruits' ? 'selected':'' %> >fruits</option>
+    <option value="vegetables" <%= result.category==='vegetables' ? 'selected':'' %>>vegetables</option>
+    <option value="dairy" <%= result.category==='dairy' ? 'selected':'' %>>dairy</option>
+</select>
+<button type="submit">submit</button>
+</form>
+</body>
